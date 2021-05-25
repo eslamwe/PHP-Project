@@ -56,7 +56,7 @@ s
 					("btn-update","btn btn-light border" ," <i class ='fas fa-pen-alt'></i> ", "update" , "data-toggle ='tooltip' data-placement = 'bottom' title = 'Update'  ");?>
 					<?php buttonElement
 					("btn-delete","btn btn-danger" ," <i class ='fas fa-trash-alt'></i> ", "delete" ,"data-toggle ='tooltip' data-placement = 'bottom' title = 'Delete'  ");?>
-                        <?php deleteBtn()?>
+                        <?php deleteBtn(); ?>
 
                     </div>
 				</div>
