@@ -1,3 +1,8 @@
+
+let id=$("input[name*='book_id']")
+id.attr("readonly","readonly");
+
+
 $(".btnedit").click(e =>{
     let textvalues = displayData(e);
     console.log(textvalues);
