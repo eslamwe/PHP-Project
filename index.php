@@ -32,12 +32,12 @@ require_once("../PHP-Project/operation.php");
 		<div class="d-flex justify-content-center">
 			<form action="" method="post" class="w-50">
 				<div class="pt-2">
-					<?php inputElement("<i class = 'fas fa-id-badge'></i>" ,"ID" ,  "book_id",""  ) ;?>
+					<?php inputElement("<i class = 'fas fa-id-badge'></i>" ,"ID" ,  "book_id",setID()  ) ;?>
 
 				<div class="pt-2">
 				<?php inputElement("<i class = 'fas fa-book'></i>" ,"Book Name" ,  "book_name",""  ) ;?>
                </div>
-
+s
 				</div>
 				<div class="row pt-2">
 					<div class = "col">
@@ -56,7 +56,9 @@ require_once("../PHP-Project/operation.php");
 					("btn-update","btn btn-light border" ," <i class ='fas fa-pen-alt'></i> ", "update" , "data-toggle ='tooltip' data-placement = 'bottom' title = 'Update'  ");?>
 					<?php buttonElement
 					("btn-delete","btn btn-danger" ," <i class ='fas fa-trash-alt'></i> ", "delete" ,"data-toggle ='tooltip' data-placement = 'bottom' title = 'Delete'  ");?>
-				</div>
+                        <?php deleteBtn()?>
+
+                    </div>
 				</div>
 
 
