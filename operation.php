@@ -23,6 +23,8 @@ if(isset($_POST['deleteall'])){
     deleteAll();
 }
 
+
+
 function createData(){
     $bookname = textBoxValue("book_name");
     $bookpublisher = textBoxValue("book_publisher");
@@ -90,7 +92,6 @@ function updateData(){
     }
 }
 
-
 function deleteRecord(){
     $bookid=(int)textBoxValue("book_id");
 
@@ -99,7 +100,7 @@ function deleteRecord(){
     if(mysqli_query($GLOBALS['con'],$sql)){
         TextNode("success","Record Deleted Successfully...!");
     }else{
-        TextNode("error","Enaable to DELETE rECORD...!");
+        TextNode("error","Unable to DELETE RECORD...!");
     }
 }
 

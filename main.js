@@ -1,6 +1,5 @@
 
-let id=$("input[name*='book_id']")
-id.attr("readonly","readonly");
+
 
 
 $(".btnedit").click(e =>{
@@ -23,12 +22,19 @@ function displayData(e){
     let td = $("tbody tr td").get();
     let textvalues = [];
 
-
-
     for (const value of td) {
         if (value.dataset.id === e.target.dataset.id){
           textvalues[id++] = value.textContent;
         }
     }
     return textvalues;
+}
+
+function readOnly(){
+    let id =$("input[name*='book_id']")
+    id.attr("readonly","readonly");
+}
+
+function togglePopUp(){
+    document.getElementById("popup-1").classList.toggle("active");
 }

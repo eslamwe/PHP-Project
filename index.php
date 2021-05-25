@@ -3,7 +3,6 @@
 require_once("../PHP-Project/component.php");
 require_once("../PHP-Project/operation.php");
 
-
 ?>
 <!DOCTYPE html>
 <html lang = "en">
@@ -32,12 +31,11 @@ require_once("../PHP-Project/operation.php");
 		<div class="d-flex justify-content-center">
 			<form action="" method="post" class="w-50">
 				<div class="pt-2">
-					<?php inputElement("<i class = 'fas fa-id-badge'></i>" ,"ID" ,  "book_id",setID()  ) ;?>
-
+					<?php inputElement("<i class = 'fas fa-id-badge' ></i>" ,"ID" ,  "book_id",""  ) ;?>
 				<div class="pt-2">
 				<?php inputElement("<i class = 'fas fa-book'></i>" ,"Book Name" ,  "book_name",""  ) ;?>
                </div>
-s
+
 				</div>
 				<div class="row pt-2">
 					<div class = "col">
@@ -66,8 +64,7 @@ s
 			<table class="table table-striped table-dark">
 				<thead class="thead-dark">
 					<tr>
-					<th>ID</th> 
-					
+					<th>ID</th>
 					<th>Book Name</th>
 					<th>Publisher</th>
 					<th>Book Price</th>

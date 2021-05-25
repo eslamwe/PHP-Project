@@ -1,3 +1,8 @@
+<?php
+require_once("../PHP-Project/registration.php");
+require_once("../PHP-Project/component.php");
+?>
+
 <!DOCTYPE html>
 <html >
 <head>
@@ -9,7 +14,7 @@
 		<div class="row">
 		<div class="col-md-6">
 		   <h2> Login Here </h2>	
-		    <form action="validation.php" method="post"> 
+		    <form action="registration.php" method="post">
 		       <div class="form-group">
 		           <label>Username</label>
                    <label>
@@ -25,10 +30,12 @@
 
 
         </div>
-		<button type="submit" class="btn btn-primary" >Login</button>
+                <?php buttonElement
+                ("btn-create","btn btn-primary" ," Login ", "LoginBtn" ,
+                    "data-toggle ='tooltip' data-placement = 'bottom' title = 'Login'  ");?>
 		</form>
 		</div>
-		
+
 		<div class="col-md-6">
 		   <h2> Register Here </h2>	
 		    <form action="registration.php" method="post">
@@ -37,22 +44,19 @@
                    <label>
                        <input type="text" name="user" class="form-control" required>
                    </label>
-
                </div>
+
 		<div class="form-group">
 		<label>Password</label>
             <label>
                 <input type="password" name="password" class="form-control" required>
             </label>
-
-
         </div>
-		<button type="submit" class="btn btn-primary" >Register
+                <?php buttonElement
+                ("btn-register","btn btn-primary" ," Register ", "RegisterBtn" ,
+                    "data-toggle ='tooltip' data-placement = 'bottom' title = 'Register'  ");?>
 		</div>
-
-
-
-	</div>
-
+        </div>
 </body>
+
 </html>
