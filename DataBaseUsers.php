@@ -6,7 +6,7 @@ function CreateDB1(){
     $password = "";
     $dbname = "users";
 
-    $con = mysqli_connect($serverName,$username,$password,$dbname);
+    $con = mysqli_connect($serverName,$username,$password);
 
     if (!$con){
         die("Connection Failed : ".mysqli_connect_error());
